@@ -136,6 +136,7 @@ form{
     display: flex;
     flex-direction: column;
     margin: 0 auto;
+    padding: 0 24px;
 }
 
 input, textarea {
@@ -166,3 +167,75 @@ footer{
     padding: 0 16px;
 }
 
+/*SMALL PHONES, TABLETS, LARGE SMARTPHONES*/
+
+@media (max-width: 768px) {
+    .row {
+      flex-direction: column;
+    }
+    
+    .home__description, .home__img--wrapper {
+      width: 100%;
+    }
+  
+    nav ul {
+      display: none;
+    }
+  
+    .home__description {
+      margin-bottom: 24px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    h1 {
+      text-align: center;
+      font-size: 60px;
+    }
+  
+    .subheader {
+      text-align: center;
+      font-size: 28px;
+    }
+  
+    .section__description {
+      flex-direction: column;
+    }
+  
+    .section__description--wrapper,
+    .about__img--wrapper {
+      width: 100%;
+    }
+  
+    #discord .section__description {
+      flex-direction: column-reverse;
+    }
+  
+    form {
+      padding: 0 24px;
+    }
+  
+    footer {
+      padding: 48px 24px;
+    }
+  
+    .footer__logo {
+      max-width: 400px;
+    }
+  
+    .footer__link {
+      padding: 0 8px;
+      font-size: 18px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .footer__logo {
+      max-width: 320px;
+    }
+  
+    .footer__link {
+      font-size: 16px;
+    }
+  }
